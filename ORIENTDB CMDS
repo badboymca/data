@@ -1,0 +1,30 @@
+orientdb commands 
+-------------------------------------------------------------------------
+1.creating database
+new db your name and your cmd password
+========================================================================
+Note:line one execute after remove and execute
+
+2.creating vertex:
+
+query: Create class company extends V
+
+query: Create class person extends V
+===================================================================================
+3.Creating property and edge:
+
+query: Create property person.FirseName string
+
+query: Create class worksat extends E
+=============================================================================================
+4.Inserting records:
+
+query: Insert into person(FirstName,LastName) values("S","Aarthy"),("S","Anu")
+
+=============================================================================================================
+5. Creating Relationship:
+
+query:Create edge worksat from #42:0 to #43:0 //that show onely number using
+
+query:Select from V
+--------------------------------------------------------------------------------------------------------------------------------------------------------
