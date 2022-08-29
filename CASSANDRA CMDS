@@ -1,0 +1,27 @@
+First open command prompt and type(Cassandra)
+anothor open cmd type (cqlsh)
+------------------------------------------------------------------------------------------------------------
+cqlsh> CREATE KEYSPACE sample_demo WITH replication={'class':'SimpleStrategy','replication_factor':3};
+cqlsh> desc keyspaces;
+
+cqlsh> use sample_demo;
+
+cqlsh:sample_demo>CREATE TABLE stud(reg int,name text,place text,ph int,PRIMARY KEY(reg));
+
+cqlsh:sample_demo>INSERT INTO stud(reg,name,place,ph)VALUES(007,'balaji','maduarai',987654321); //note only give 9 (ph) numbers
+
+cqlsh:sample_demo>INSERT INTO stud(reg,name,place,ph)VALUES(004,'antony','nilakottai',87654321);
+
+cqlsh:sample_demo>INSERT INTO stud(reg,name,place,ph)VALUES(008,'najeem','maduarai',123845697);
+
+cqlsh:sample_demo>INSERT INTO stud(reg,name,place,ph)VALUES(002,'naga','maduarai',984562586);
+
+cqlsh:sample_demo> SELECT * FROM stud;
+
+cqlsh:sample_demo> UPDATE stud SET place='chennai' WHERE reg=7;
+
+cqlsh:sample_demo> SELECT * FROM stud;
+
+cqlsh:sample_demo> DELETE ph FROM stud WHERE reg=4;
+
+cqlsh:sample_demo> SELECT * FROM stud;
