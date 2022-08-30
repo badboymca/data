@@ -1,0 +1,27 @@
+4. MySQL Database creation, Table creation and Query
+
+1. CREATING A DATABASE:
+
+adbt
+
+2. CREATING A TABLE:
+
+library  5 
+
+CREATE TABLE `adbt`.`library` ( `Book_ID` INT(10) NOT NULL , `Book_Name` VARCHAR(20) NOT NULL , `Author` VARCHAR(20) NOT NULL , `Edition` VARCHAR(10) NOT NULL , `Price` VARCHAR(10) NOT NULL ) ENGINE = InnoDB;
+
+3. INSERTING RECORDS IN THE TABLE:
+
+INSERT INTO `library` (`Book_ID`, `Book_Name`, `Author`, `Edition`, `Price`) VALUES ('20048', 'PL/SQL', 'Deshpande', 'Second', '250'), ('36517', 'OSConcepts', 'Silberschertz', 'Sixth','650'),('11023', 'RDBMS', 'RaghuRamakrishnan', 'Third', '700'),('32115', 'C', 'Balagurusamy', 'Fourth', '450') , ('1023', 'MobileCommunication', 'Schiller', 'Second', '375')
+
+4. UPDATING A RECORD IN THE TABLE:
+
+UPDATE `library` SET `Book_ID`='4000' WHERE Book_Name='C'
+
+5. DELETE A RECORD FROM THE TABLE:
+
+DELETE FROM `library` WHERE Book_ID='20048'
+
+6. SORTING A PARTCULAR FIELD IN THE TABLE:
+
+SELECT Book_Name FROM `library` ORDER BY Book_Name ASC
