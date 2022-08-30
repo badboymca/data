@@ -1,4 +1,8 @@
 orientdb commands 
+-------------------------------------------------------
+Now open cmd prompt
+Then type (server.bat)
+After Coping host number then go to paste localhost on chrome browser
 -------------------------------------------------------------------------
 1.creating database
 new db your name and your cmd password
