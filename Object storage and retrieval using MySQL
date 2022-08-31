@@ -1,0 +1,18 @@
+emp(Database create)
+
+CREATE TABLE emprec(id int auto_increment primary key, name varchar(255), courses json) 
+
+INSERT INTO emprec(name,courses) VALUES('balaji','{"python":"csc","java":"mpn"}')  
+
+INSERT INTO emprec(name,courses) VALUES('antony','{"java":"csc","java":"mpn"}')  
+
+INSERT INTO emprec(name,courses) VALUES('rabin','{"c":"csc","java":"mpn"}')  
+
+INSERT INTO emprec(name,courses) VALUES('nivin','{"php":"csc","java":"mpn"}') 
+
+SELECT * FROM emprec 
+
+UPDATE emprec SET courses=JSON_SET(courses,'$java','mpn insti') WHERE id=3 
+
+
+SELECT JSON_REMOVE('{"java":"mpn","dot net":"sisi"}','$java') as courses
