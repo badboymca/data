@@ -1,0 +1,42 @@
+(notepad using save this file (college.xml) and your desktop)
+
+<college>
+<staff>
+    <id>1</id>
+    <name>Manikandan R</name>
+    <dept>Mca</dept>
+</staff>
+<staff>
+    <id>2</id>
+    <name>Muralai R</name>
+    <dept>Mca</dept>
+</staff>
+</college>
+
+--------------------------------------------------------------------------------------------------------------------------
+
+xammp run apache,mysql
+
+go to browse myphpadmin(localhost using)
+
+CREATE DATABASE college
+
+table STAFF row 6
+
+CREATE TABLE STAFF (id INT, name VARCHAR(20), dept VARCHAR(20));
+
+go to xampp file exploer then choose(mysql) after select (bin) then remove and type (cmd)
+
+now open type(mysql.exe –u root –p)
+
+enterpassword->go to myphpadmin->college click->PRIVILEGES->root(127.0)->editprivileges->changepassword->nopasswrd->generate->go
+
+now xammp go to enter password :(enter press) only after open maria db
+
+show databases;
+
+use college;
+
+LOAD XML INFILE "C:/Users/ANTONY ARO/Desktop/college.xml" INTO TABLE staff ROWS IDENTIFIED BY '<college>'; //follow this method
+
+select * from staff;
