@@ -1,0 +1,34 @@
+emprecords(database create)
+
+
+CREATE TABLE emprecords ( ID INT(3) NOT NULL , emp_name VARCHAR(30) NOT NULL ,Batch INT(4) NOT NULL,Joining_Date DATE, Ending_Date DATE )
+
+INSERT INTO `emprecords`(`Id`, `emp_name`, `Batch`, `Joining_Date`, `Ending_Date`) VALUES (1,'Ashwin','2020','2020-01-01','2022-12-30')
+
+INSERT INTO `emprecords`(`Id`, `emp_name`, `Batch`, `Joining_Date`, `Ending_Date`) VALUES (2,'Balaji','2020','2020-01-01','2022-12-30')
+I
+NSERT INTO `emprecords`(Id, emp_name, Batch, Joining_Date, Ending_Date) VALUES(3,'Aro','2019','2019-07-16','2021-07-30') 
+
+INSERT INTO `emprecords`(Id, emp_name, Batch, Joining_Date, Ending_Date) VALUES(4,'Aravindh','2019','2019-07-16','2021-07-30') 
+
+INSERT INTO `emprecords`(Id, emp_name, Batch, Joining_Date, Ending_Date) VALUES(5,'Vijay','2018','2018-01-01','2020-12-25') 
+
+SELECT * FROM emprecords
+
+SELECT Id,emp_name,Batch,Joining_Date FROM `emprecords` WHERE Id=1 
+
+SELECT Id,Batch,Joining_Date FROM `emprecords` WHERE emp_name= 'Ashwin'  
+
+SELECT * FROM `emprecords` WHERE (Joining_Date BETWEEN '2018- 01-01' AND '2018-12-25') 
+
+SELECT emp_name,Joining_Date,Ending_Date FROM `emprecords` WHERE Batch NOT BETWEEN 2018 and 2019 
+
+SELECT emp_name FROM `emprecords` ORDER BY emp_name ASC 
+
+SELECT emp_name FROM `emprecords` ORDER BY emp_name DESC 
+
+
+
+
+
+
