@@ -1,16 +1,16 @@
 (notepad using save this file (college.xml) and your desktop)
 
 <college>
-<staff>
+<staff1>
     <id>1</id>
     <name>Manikandan R</name>
     <dept>Mca</dept>
-</staff>
-<staff>
+</staff1>
+<staff2>
     <id>2</id>
     <name>Muralai R</name>
     <dept>Mca</dept>
-</staff>
+</staff2>
 </college>
 
 --------------------------------------------------------------------------------------------------------------------------
